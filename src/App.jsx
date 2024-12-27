@@ -21,14 +21,15 @@ function App() {
             mouseControls: true,
             touchControls: true,
             gyroControls: false,
-            minHeight: 200.0,
-            minWidth: 200.0,
-            highlightColor: 0x252561,
-            midtoneColor: 0x5f6770,
-            lowlightColor: 0x5050be,
-            baseColor: 0x1f1f38,
-            blurFactor: 0.62,
-            speed: 1.95,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            highlightColor: 0x19193d,
+            midtoneColor: 0x372da9,
+            lowlightColor: 0xf0833,
+            baseColor: 0x0,
+            blurFactor: 0.90,
+            speed: 3.80,
+            zoom: 0.30
           })
         );
       }

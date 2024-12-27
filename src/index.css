@@ -11,7 +11,7 @@
   --color-primary: #4db5ff;
   --color-primary-variant: rgba(77, 181, 255, 0.4);
   --color-white: #fff;
-  --color-light: rgba(255, 255, 255, 0.6);
+  --color-light: rgba(255, 255, 255, 0.5);
   --transition: all 0.4s ease;
 }
 html{
@@ -57,13 +57,13 @@ a:hover {
   padding: 0.75rem 1.2rem;
   border-radius: 0.4rem;
   cursor: pointer;
-  border: 1px solid rgb(38, 141, 141);
+  border: 1px solid #073B4C;
   transition: var(--transition);
 }
 
 .btn:hover {
-  background: var(--color-white);
-  color: var(--color-bg);
+  background-image: linear-gradient(to top, transparent, #462255);
+  color: var(--color-white);
   border-color: transparent;
 }
 .btn-primary {

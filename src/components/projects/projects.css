@@ -9,21 +9,22 @@
   gap: 20px;
 }
 .project .box .card {
-  background-image: linear-gradient(to top, #000428, #004e92);
-  width: 350px;
-  height: 320px;
+
+  background-image: linear-gradient(to top, transparent, #462255);
+  border: 1px solid #462255;
+  height: 280px;
   border-radius: 20px;
 }
 .project .box .card:hover {
   background: transparent;
-  border: 1px solid #30cfd0;
+  border: 1px solid #462255;
   cursor: pointer;
 }
 .project .box .card .imag {
   margin: 15px auto;
 }
 .project .box .card .imag img {
-  width: 295px;
+  width: 290px;
   height: 160px;
   border-radius: 20px;
   margin: auto;
@@ -33,10 +34,18 @@
   margin-left: 15px;
   margin-bottom: 5px;
 }
-.project .box .card .buttons a {
+.project .box .card .buttons  {
   margin-left: 10px;
-  padding: 8px;
-  margin-top: 5px;
+  margin-top: 10px;
+ 
+ 
+}
+.project .box .card .buttons a{
+  padding: 15px;
+  font-size: 20px;
+}
+.project .box .card .buttons:hover{
+ transform: scale(1.05);
 }
 .project .box .card .buttons .btn {
   color: rgb(72, 68, 68);
@@ -47,7 +56,7 @@
 }
 @media (max-width: 600px) {
   .project .box .card {
-    text-align: center;
+  
     margin: auto;
   }
 }

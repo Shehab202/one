@@ -54,7 +54,7 @@ function About() {
             </div>
 
             <div className="box">
-              <div className="cards"></div>
+      
               <div className="text" ref={containerRef}>
                 <h2>Shehab Hussein</h2>
                 <p>

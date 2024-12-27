@@ -1,7 +1,7 @@
 import "./skills.css";
 import htmlIcon from "../../assets/html-1.svg";
 import cssIcon from "../../assets/css-3 (1).svg";
-import javascriptIcon from "../../assets/javascript-1.svg";
+import javascriptIcon from "../../assets/logo-javascript.svg";
 import bootstrapIcon from "../../assets/bootstrap-5-1.svg";
 import tailwindIcon from "../../assets/tailwind-css-2.svg";
 import gitIcon from "../../assets/git-icon.svg";
@@ -9,6 +9,7 @@ import githubIcon from "../../assets/github-icon-1.svg";
 import reactIcon from "../../assets/react-2.svg";
 import reduxIcon from "../../assets/redux.svg";
 import typescriptIcon from "../../assets/typescript-2.svg";
+
 import gsap from "gsap";
 
 import { useEffect, useRef } from "react";

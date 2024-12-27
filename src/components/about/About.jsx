@@ -30,7 +30,7 @@ function About() {
       { opacity: 0, x: -50 },
       {
         x: 0,
-        duration: 3,
+        duration: 4,
         opacity: 1,
         ease: "power4.out",
         scrollTrigger: {

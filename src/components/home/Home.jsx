@@ -18,7 +18,7 @@ function Home() {
     const el = one.current;
     gsap.fromTo(
       el,
-      { opacity: 0, y: -50 },
+      { opacity: 0, y: -100 },
       {
         y: 0,
         duration: 5,

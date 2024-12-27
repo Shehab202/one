@@ -89,7 +89,7 @@ function Skills() {
     const el = containerRef.current;
     gsap.fromTo(
       el,
-      { opacity: 0, y: 35 },
+      { opacity: 0, y: 40 },
       {
         y: 0,
         duration: 4,

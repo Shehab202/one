@@ -63,10 +63,10 @@ function Projects() {
     const el = containerRef.current;
     gsap.fromTo(
       el,
-      { opacity: 0, y: 35 },
+      { opacity: 0, y: 40 },
       {
         y: 0,
-        duration: 3,
+        duration: 4,
         opacity: 1,
         ease: "power4.out",
         scrollTrigger: {

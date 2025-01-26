@@ -1,64 +1,10 @@
 import { MdDesignServices } from "react-icons/md";
 import { IoIosRocket } from "react-icons/io";
 import { FaCode } from "react-icons/fa";
-import gsap from "gsap";
+import { motion } from "framer-motion";
 
-import { useEffect, useRef } from "react";
-import ScrollTrigger from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
 import "./services.css";
 function Services() {
-  const one = useRef(null);
-  const tow = useRef(null);
-  const three = useRef(null);
-
-  useEffect(() => {
-    const elw = one.current;
-    gsap.fromTo(
-      elw,
-      { opacity: 0, x: -100 },
-      {
-        x: 0,
-        duration: 4,
-        opacity: 1,
-        ease: "power4.out",
-        scrollTrigger: {
-          trigger: elw,
-        },
-      }
-    );
-    const ela = tow.current;
-    gsap.fromTo(
-      ela,
-      { opacity: 0, y: 100 },
-      {
-        y: 0,
-        duration: 4,
-        opacity: 1,
-        ease: "power4.out",
-        scrollTrigger: {
-          trigger: ela,
-        },
-      }
-    );
-    const elc = three.current;
-    gsap.fromTo(
-      elc,
-      { opacity: 0, x: 1000 },
-      {
-        x: 0,
-
-        duration: 4,
-        opacity: 1,
-        ease: "power4.out",
-        scrollTrigger: {
-          trigger: elc,
-        },
-      }
-    );
-  }, []);
-
   return (
     <div>
       <div className="services" id="services">
@@ -68,8 +14,26 @@ function Services() {
         </div>
 
         <div className="container">
-          <div className="box">
-            <div className="card" ref={one}>
+          <motion.div className="box">
+            <motion.div
+              className="card"
+              initial={{
+                opacity: 0,
+                y: 100,
+              }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+              }}
+              viewport={{once:true}}
+              transition={{
+                duration: 1,
+                type: "spring",
+                ease: "easeInOut",
+                delay: 0.1,
+                stiffness:100
+              }}
+            >
               <h1>
                 <MdDesignServices />
               </h1>
@@ -81,9 +45,27 @@ function Services() {
                   expectations
                 </p>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="card" ref={tow}>
+            <motion.div
+              className="card"
+              initial={{
+                opacity: 0,
+                y: 100,
+              }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+              }}
+              viewport={{once:true}}
+              transition={{
+                duration: 1,
+                type: "spring",
+                ease: "easeInOut",
+                delay: 0.1,
+                stiffness:100
+              }}
+            >
               <h1>
                 <IoIosRocket />
               </h1>
@@ -94,9 +76,27 @@ function Services() {
                   experience
                 </p>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="card" ref={three}>
+            <motion.div
+              className="card"
+              initial={{
+                opacity: 0,
+                y: 100,
+              }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+              }}
+              viewport={{once:true}}
+              transition={{
+                duration: 1,
+                type: "spring",
+                ease: "easeInOut",
+                delay: 0.1,
+                stiffness:100
+              }}
+            >
               <h1>
                 <FaCode />
               </h1>
@@ -107,8 +107,8 @@ function Services() {
                   maintenance and long-term development
                 </p>
               </div>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
       </div>
     </div>

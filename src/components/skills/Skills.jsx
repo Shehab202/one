@@ -8,100 +8,86 @@ import gitIcon from "../../assets/git-icon.svg";
 import githubIcon from "../../assets/github-icon-1.svg";
 import reactIcon from "../../assets/react-2.svg";
 import reduxIcon from "../../assets/redux.svg";
+import framer from "../../assets/framer-motion.svg";
 import typescriptIcon from "../../assets/typescript-2.svg";
-
-import gsap from "gsap";
-
-import { useEffect, useRef } from "react";
-import ScrollTrigger from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
+import { motion } from "framer-motion";
 const skills = [
   {
     id: 1,
     icon: htmlIcon,
     title: "HTML",
-    description: "I'm proficient in HTML5 and CSS3.",
+    description:
+      "Skilled in creating structured and semantic web pages using HTML5.",
     ref: "containerRef",
   },
   {
     id: 2,
     icon: cssIcon,
     title: "CSS",
-    description: "I'm proficient in CSS3 and Bootstrap 5.",
+    description:"Proficient in crafting responsive designs with CSS3 and Bootstrap 5."
+,
   },
   {
     id: 3,
     icon: javascriptIcon,
     title: "JavaScript",
-    description: "I'm proficient in JavaScript, React, and Redux.",
+    description: "Experienced in building interactive web features using JavaScript",
   },
 
   {
     id: 9,
     icon: typescriptIcon,
     title: "TypeScript",
-    description: "I'm proficient in TypeScript.",
+    description: "Specialized in writing scalable and maintainable code with TypeScript."
+
   },
   {
     id: 10,
     icon: bootstrapIcon,
     title: "Bootstrap",
-    description: "I've worked with Bootstrap 5 for a few projects.",
+    description: "Expert in designing responsive, mobile-first websites with Bootstrap.",
   },
   {
     id: 4,
     icon: tailwindIcon,
     title: "Tailwind CSS",
-    description: "I've used Tailwind CSS for a few projects.",
+    description:"Experienced in designing modern and responsive interfaces using Tailwind CSS for various projects.",
   },
   {
     id: 5,
     icon: gitIcon,
     title: "Git",
-    description: "I'm proficient in Git and GitHub.",
+    description: "Proficient in version control and collaborative workflows using Git.",
   },
   {
     id: 6,
     icon: githubIcon,
     title: "Github",
-    description: "I'm proficient in GitHub.",
+    description: "Skilled in managing repositories and collaborating on projects through GitHub.",
   },
 
   {
     id: 7,
     icon: reactIcon,
     title: "React",
-    description: "I'm proficient in React and Redux.",
+    description: "Experienced in building dynamic user interfaces and managing state efficiently with React.",
   },
   {
     id: 8,
     icon: reduxIcon,
     title: "Redux",
-    description: "I've worked with Redux for a few projects.",
+    description: "Skilled in implementing state management solutions with Redux for scalable applications."
+,
+  },
+  {
+    id: 11,
+    icon: framer,
+    title: "Framer-Fotion",
+    description: "I've worked with Framer-Fotion for a few projects.",
   },
 ];
 
 function Skills() {
-  const containerRef = useRef(null);
-
-  useEffect(() => {
-    const el = containerRef.current;
-    gsap.fromTo(
-      el,
-      { opacity: 0, y: 40 },
-      {
-        y: 0,
-        duration: 4,
-        opacity: 1,
-        ease: "power4.out",
-        scrollTrigger: {
-          trigger: el,
-        },
-      }
-    );
-  }, []);
-
   return (
     <div>
       <div className="skills" id="skills">
@@ -110,9 +96,28 @@ function Skills() {
           <h2>My Skills</h2>
         </div>
         <div className="container">
-          <div className="box" ref={containerRef}>
+          <div className="box">
             {skills.map((skill) => (
-              <div key={skill.id} className="skill">
+              <motion.div
+                key={skill.id}
+                className="skill"
+                initial={{
+                  opacity: 0,
+                  y: 100,
+                }}
+                whileInView={{
+                  opacity: 1,
+                  y: 0,
+                }}
+                viewport={{ once: true }}
+                transition={{
+                  duration: 1,
+                  type: "spring",
+                  ease: "easeInOut",
+                  delay: 0.1,
+                  stiffness: 100,
+                }}
+              >
                 <div className="imag">
                   <img src={skill.icon} alt={skill.title} />
                 </div>
@@ -120,7 +125,7 @@ function Skills() {
                   <h4>{skill.title}</h4>
                   <p>{skill.description}</p>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>

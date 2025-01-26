@@ -78,17 +78,13 @@ img {
   .container {
     width: 85%;
   }
-  section {
-    padding-top: 6rem;
-  }
+ 
 }
 @media (max-width: 600px) {
   .container {
     width: 90%;
   }
-  section {
-    padding-top: 3rem;
-  }
+  
 }
 .component{
   margin-top: 30px;

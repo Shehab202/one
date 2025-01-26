@@ -29,7 +29,7 @@ function App() {
             baseColor: 0x0,
             blurFactor: 0.90,
             speed: 3.80,
-            zoom: 0.30
+            zoom: 0.40
           })
         );
       }

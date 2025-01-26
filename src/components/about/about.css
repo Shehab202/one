@@ -31,16 +31,13 @@
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 }
 
-/* #about .text {
-  margin-top: 20px;
-
+#about .text {
+  text-align: center;
 }
-#about .text p {
-  color: var(--color-light);
+#about .text p{
+  text-align: start;
+  margin: 10px 0;
 }
-#about .text a {
-  margin-top: 20px;
-} */
 #about .content span,
 #about .text h2 {
   color: darkkhaki;
@@ -49,23 +46,16 @@
   #about .imge img {
     display: none;
   }
-  #about .text{
-    text-align: center;
 
-   
-  }
   #about .text a {
     margin-top: 15px;
   }
 }
 @media (max-width: 600px) {
-  #about .text {
-    text-align: center;
-    margin-right: 50px;
-   
+  #about .text p {
+    max-width: 92%;
   }
   #about .text .box {
     margin: auto;
-
   }
 }

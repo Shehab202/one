@@ -45,6 +45,20 @@
 .icon a {
   font-size: 20px;
 }
+.home-content h4 {
+  width:200vw;
+}
+.rr{
+  width:200px;
+  height: 30px;
+text-align: center;
+margin: auto;
+  /* overflow: hidden; */
+  border: 1px solid #462255;
+  box-shadow: 0 3px 10px rgba(1, 1, 22);
+  background-image: radial-gradient( circle farthest-corner at 3.2% 49.6%,  rgba(80,12,139,0.87) 0%, rgba(161,10,144,0.72) 83.6% );  border-radius: 15px;
+}
+
 .icon::after {
   content: "";
   width: 1px;

@@ -48,7 +48,7 @@ function Home() {
   return (
     <div className="home" id="home">
       <div className="container home-content" ref={one}>
-        <h4>Hello I`m</h4>
+        <h3>Hello I`m</h3>
         <h1>Sehab Hussein</h1>
         <div className="rr">
           <motion.h4

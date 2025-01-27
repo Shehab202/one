@@ -16,6 +16,8 @@
   justify-content: center;
 }
 
+  
+.home-content h3 ,
 .home-content h1 {
   background: linear-gradient(to top, #09203f 0%, #e8f0f6 100%);
   background-clip: text;
@@ -52,11 +54,14 @@
   width:200px;
   height: 30px;
 text-align: center;
-margin: auto;
+margin: 7px auto 10px auto;
+
   overflow: hidden;
-  border: 1px solid #462255;
+  border: 1px solid var(--color-primary);
   box-shadow: 0 3px 10px rgba(1, 1, 22);
-  background-image: radial-gradient( circle farthest-corner at 3.2% 49.6%,  rgba(80,12,139,0.87) 0%, rgba(161,10,144,0.72) 83.6% );  border-radius: 15px;
+  background-color: transparent;
+   /* background-image: radial-gradient( circle farthest-corner at 3.2% 49.6%,  rgba(80,12,139,0.87) 0%, rgba(161,10,144,0.72) 83.6% );  */
+   border-radius: 15px; 
 }
 
 .icon::after {

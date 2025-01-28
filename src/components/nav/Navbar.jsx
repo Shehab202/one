@@ -8,10 +8,14 @@ import { useState } from "react";
 import "./navbar.css";
 function Navbar() {
   const [active, setCtive] = useState("#");
+
+
+
   return (
-    <div>
+    <div >
+     
       <nav>
-        <ul>
+        <ul >
           <li
             className={active === "#" && "active"}
             onClick={() => setCtive("#")}

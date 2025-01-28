@@ -45,7 +45,7 @@ function Contact() {
       { opacity: 0, x: -50 },
       {
         x: 0,
-        duration: 4,
+        duration: 2,
         opacity: 1,
         ease: "power4.out",
         scrollTrigger: {

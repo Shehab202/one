@@ -57,13 +57,14 @@ function Services() {
                 opacity: 1,
                 y: 0,
               }}
-              viewport={{once:true}}
+              viewport={{ once: true }}
               transition={{
-                duration: 1,
+               
                 type: "spring",
                 ease: "easeInOut",
                 delay: 0.1,
-                stiffness:100
+                stiffness: 50,
+                duration: 2,
               }}
             >
               <h1>

@@ -55,7 +55,7 @@ function Home() {
             className="text-light"
             initial={{ x: 0 }}
             animate={{ x: "-100%" }}
-            transition={{ duration: 150, repeat: Infinity, delay:2 ,ease:"linear"}}
+            transition={{ duration: 120, repeat: Infinity, delay:1.5 ,ease:"linear"}}
           >
             A Frontend Developer A Frontend Developer A Frontend Developer A
             Frontend Developer A Frontend Developer A Frontend Developer A

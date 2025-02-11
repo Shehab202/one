@@ -38,7 +38,7 @@ const allProject = [
     img: project2,
     title: "Book-Store",
     github: "kk",
-    demo: "https://iridescent-twilight-608d5c.netlify.app/",
+    demo: "https://delightful-tapioca-7a0a8e.netlify.app/",
     technologies: [reactsvg, reactIcon, reduxIcon, router],
   },
   {
@@ -91,7 +91,7 @@ function Projects() {
                   opacity: 1,
                   y: 0,
                 }}
-                // viewport={{ once: true }}
+                viewport={{ once: true }}
                 transition={{
                   duration: 5,
                   type: "spring",

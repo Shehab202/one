@@ -27,10 +27,10 @@ function Services() {
               }}
               viewport={{once:true}}
               transition={{
-                duration: 1,
+                duration: 5,
                 type: "spring",
                 ease: "easeInOut",
-                delay: 0.1,
+                delay: 0.3,
                 stiffness:100
               }}
             >
@@ -62,9 +62,9 @@ function Services() {
                
                 type: "spring",
                 ease: "easeInOut",
-                delay: 0.1,
+                delay: 0.3,
                 stiffness: 50,
-                duration: 2,
+                duration: 5,
               }}
             >
               <h1>
@@ -91,10 +91,10 @@ function Services() {
               }}
               viewport={{once:true}}
               transition={{
-                duration: 1,
+                duration: 5,
                 type: "spring",
                 ease: "easeInOut",
-                delay: 0.1,
+                delay: 0.3,
                 stiffness:100
               }}
             >

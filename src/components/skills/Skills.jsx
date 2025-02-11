@@ -10,6 +10,11 @@ import reactIcon from "../../assets/react-2.svg";
 import reduxIcon from "../../assets/redux.svg";
 import framer from "../../assets/framer-motion.svg";
 import typescriptIcon from "../../assets/typescript-2.svg";
+import router from "../../assets/Dark (1).svg";
+import axios from "../../assets/axios.svg";
+import vite from "../../assets/Vitejs-logo.svg.png";
+
+
 import { motion } from "framer-motion";
 const skills = [
   {
@@ -85,6 +90,24 @@ const skills = [
     title: "Framer-Fotion",
     description: "I've worked with Framer-Fotion for a few projects.",
   },
+  {
+    id: 13,
+    icon: router,
+    title: "React-Router",
+    description: "I develop interactive web applications using React Router to manage navigation between pages seamlessly.",
+  },
+  {
+    id: 14,
+    icon: axios,
+    title: "Axios",
+    description: "I'm developing a web application that requires communication with a backend server, and I used Axios to efficiently manage HTTP requests (GET, POST, PUT, DELETE).",
+  },
+  {
+    id: 14,
+    icon: vite,
+    title: "vite",
+    description: "Use Vite for high performance and speed of development.",
+  },
 ];
 
 function Skills() {
@@ -114,9 +137,9 @@ function Skills() {
                  
                   type: "spring",
                   ease: "easeInOut",
-                  delay: 0.1,
+                  delay: 0.2,
                   stiffness: 50,
-                  duration: 2,
+                  duration: 5,
                 }}
               >
                 <div className="imag">

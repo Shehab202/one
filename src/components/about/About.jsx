@@ -1,11 +1,7 @@
 import "./about.css";
-
 import pg2 from "../../assets/ea2ba424-08d3-4afd-80cf-495629201acc.jpeg";
-
 import gsap from "gsap";
-
 import { useEffect, useRef } from "react";
-
 function About() {
   const containerRef = useRef(null);
   const x = useRef(null);
@@ -39,7 +35,6 @@ function About() {
       }
     );
   }, []);
-
   return (
     <div>
       <div className="about" id="about">
@@ -51,10 +46,7 @@ function About() {
           <div className="content">
             <div className="imge" ref={x}>
               <img src={pg2} alt="" />
-            </div>
-
-            <div className="box">
-      
+            </div> 
               <div className="text" ref={containerRef}>
                 <h2>Shehab Hussein</h2>
                 <p>
@@ -77,7 +69,7 @@ function About() {
             </div>
           </div>
         </div>
-      </div>
+      {/* </div> */}
     </div>
   );
 }
